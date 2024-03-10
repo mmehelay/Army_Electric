@@ -15,7 +15,66 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-   
+    <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Hero2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Hero2.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/Hero2.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+                                
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/Hero3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/Hero3.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/Hero3.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/commercial2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/commercial2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/commercial2.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">About Army Electric </h2>
+                <p class="cs-text">
+                   At Army Electric, we've been illuminating Toronto's commercial, residential, and industrial spaces with dedication and expertise for over a decade. From the heart of the city's bustling commercial districts to the cozy neighborhoods that make Toronto home, we bring a personal touch to every job, ensuring safety, efficiency, and innovation.
+                </p>
+                <p class="cs-text">
+                    Driven by a deep understanding of our clients' needs, we tailor our solutions to bring their visions to life, combining technical expertise with a human touch. We believe in building relationships that last, grounded in trust, transparency, and mutual respect.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                       We started Army Electric with the belief that a good electrician doesn't just fix problems but lights up lives. That's the spark that drives us every day.
+                    </p>
+                    <span class="cs-name">Michael Hunter</span>
+                    <span class="cs-job">CEO-Founder</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+        </div>
+    </section>
 
     {% include 'components/cta.html' %}
 

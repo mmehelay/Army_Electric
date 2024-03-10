@@ -1,0 +1,109 @@
+---
+title: 'Residential'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'Residential/'
+eleventyNavigation:
+    key: Residential
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Residential</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Hero2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Hero2.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/Hero2.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-418">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">Residential</h2>
+            <p class="cs-text">
+             At Army Electric, we illuminate more than rooms; we enhance lifestyles. Our skilled electricians are masters at tailoring solutions to the unique needs of Toronto's homes, ensuring your living spaces are safe, comfortable, and energy-efficient. With us, your home is not just wired—it's transformed into a haven of comfort and convenience, where every switch and socket adds to your quality of life.
+            </p>
+            <div class="cs-button-group">
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+              
+            </div>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/hero.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/hero.png">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/hero.png" alt="yard" width="558" height="496">
+          
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Expertise</span>
+            <h2 class="cs-title">Why Choose Us?</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild.svg" alt="heart icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Personalized Home Solutions</h3>
+                <p class="cs-item-text">
+              We craft electrical services that fit your home's character and your family's lifestyle, ensuring comfort and convenience in every corner.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/toolbox.svg" alt="toolbox icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Safety First Approach</h3>
+                <p class="cs-item-text">
+                   Your family's safety is our top priority, reflected in our meticulous workmanship and adherence to the highest safety standards.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Energy Efficiency Expert</h3>
+                <p class="cs-item-text">
+                 We're committed to helping you save on energy bills with smart, eco-friendly electrical solutions that benefit both your wallet and the planet.
+                </p>
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Ask Us Anything</a>
+    </div>
+</section>
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}

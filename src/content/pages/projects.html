@@ -16,7 +16,94 @@ eleventyNavigation:
 
 {% block body %}
 
-   
+     <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Gallery</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Hero2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Hero2.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/Hero2.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/army1.png">
+                        <source media="(min-width: 601px)" srcset="/assets/images/army1.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/army1.png" alt="new hallway" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/about1.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/about1.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/about1.jpg" alt="new home construction" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/army3.png">
+                        <source media="(min-width: 601px)" srcset="/assets/images/army3.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/army3.png" alt="building a new wall" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/commercial2.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/commercial2.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/commercial2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/hero2.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/hero2.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/hero2.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/hero3.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/hero3.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/hero3.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/hero4.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/hero4.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/hero4.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/hero5.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/hero5.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/hero5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/commercial.png">
+                        <source media="(min-width: 601px)" srcset="/assets/images/commercial.png">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/commercial.png" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture>
+
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>
+            </div>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </section>
+
     {% include 'components/cta.html' %}
 
 {% endblock %}

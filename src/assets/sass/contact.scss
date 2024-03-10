@@ -5,200 +5,336 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0em) {
-    :root {
-        /* 13px - 16px */
-        --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-        /* 31px - 49px */
-        --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
-        --bodyFontSize: 1rem;
-
-        /* 60px - 100px top and bottom */
-        --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
-    }
-
-    #cs-contact {
-        font-family: "Roboto", "Arial", sans-serif;
-        padding: var(--sectionPadding);
+@media only screen and (min-width: 0rem) {
+    #contact-1269 {
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
 
         .cs-container {
             width: 100%;
-            /* changes to 1280px at desktop */
-            max-width: calc(800 / 16 * 1rem);
+            max-width: calc(1280 / 16 * 1rem);
             margin: auto;
+            margin-top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: column;
         }
 
         .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
             width: 100%;
+            padding: var(--sectionPadding);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
         }
 
-        .cs-topper {
-            text-align: left;
-            /* 8px - 12px */
-            margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
+        .cs-form-group {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            max-width: calc(704 / 16 * 1rem);
+            /* resets to 0 at tablet */
+            margin: auto;
+            padding: var(--sectionPadding);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+            order: 2;
         }
 
         .cs-title {
-            text-align: left;
-            max-width: calc(800 / 16 * 1rem);
+            color: var(--bodyTextColorWhite);
         }
 
         .cs-text {
-            text-align: left;
-            /* 404px - 522px */
-            max-width: clamp(25.25rem, 30vw, 32.625rem);
-            margin: 0 auto 0 0;
-            /* 40px - 48px */
-            margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
         }
 
-        #cs-form {
-            margin-bottom: calc(40 / 16 * 1rem);
-            label {
-                font-size: calc(16 / 16 * 1rem);
-                font-weight: 700;
-                line-height: 1.5em;
-                /* 12px - 20px */
-                margin-bottom: clamp(0.75rem, 1.3em, 1.25rem);
-                color: var(--headerColor);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-            }
-
-            .cs-label-message {
-                /* 32px - 48px */
-                margin-bottom: clamp(2rem, 6.3vw, 3rem);
-            }
-
-            input,
-            textarea {
-                font-size: calc(16 / 16 * 1rem);
-                width: 100%;
-                height: calc(64 / 16 * 1rem);
-                margin-top: calc(4 / 16 * 1rem);
-                /* prevents border & padding from affecting height */
-                box-sizing: border-box;
-                padding-left: calc(20 / 16 * 1rem);
-                border: 1px solid #b4b2c7;
-                border-radius: calc(8 / 16 * 1rem);
-                transition: border 0.3s;
-
-                &:hover {
-                    border: 1px solid var(--primary);
-                }
-            }
-
-            textarea {
-                font-family: inherit;
-                min-height: calc(120 / 16 * 1rem);
-                padding-top: calc(20 / 16 * 1rem);
-            }
-
-            .cs-button-solid {
-                width: 100%;
-                border: none;
-            }
-        }
-
-        .cs-right-section {
-            height: calc(320 / 16 * 1rem);
-            /* 24px - 40px top & bottom */
-            /* 20px - 40px left & right */
-            padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
-            border-radius: calc(8 / 16 * 1rem);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            position: relative;
-            /* cuts off corners on img tag */
-            overflow: hidden;
-        }
-
-        .cs-header {
-            /* 16px - 20px */
-            font-size: clamp(1rem, 3vw, 1.25rem);
+        .cs-h3 {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: 1.2em;
             font-weight: 700;
-            line-height: 1.2em;
-            margin-bottom: calc(8 / 16 * 1rem);
-            color: var(--bodyTextColorWhite);
-            display: block;
+            text-align: left;
+            max-width: calc(522 / 16 * 1rem);
+            margin: 0 auto calc(32 / 16 * 1rem) 0;
+            color: var(--headerColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: calc(16 / 16 * 1rem);
         }
 
-        .cs-link {
-            /* 16px - 20px */
-            font-size: clamp(1rem, 3vw, 1.25rem);
-            line-height: 1.2em;
-            text-decoration: none;
-            margin-bottom: calc(20 / 16 * 1rem);
-            color: var(--bodyTextColorWhite);
-            display: block;
+        .cs-picture {
+            width: calc(52 / 16 * 1rem);
+            height: calc(52 / 16 * 1rem);
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: none;
             position: relative;
+            z-index: 1;
 
             &:before {
-                /* Animated underline */
                 content: "";
-                width: 0%;
-                height: 2px;
-                /* current color of the parent */
-                background: currentColor;
-                opacity: 1;
-                display: block;
+                width: 100%;
+                height: 100%;
+                background: var(--primary);
+                opacity: 0.2;
                 position: absolute;
-                bottom: calc(-2 / 16 * 1rem);
+                display: block;
+                top: 0;
                 left: 0;
+            }
+        }
+
+        .cs-form {
+            width: 100%;
+            padding: 0;
+            /* prevents flexbox from affecting height and width */
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-label {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            color: var(--headerColor);
+            display: flex;
+            grid-column: span 12;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-input {
+            font-size: calc(16 / 16 * 1rem);
+            width: 100%;
+            /* 46px - 56px */
+            height: clamp(2.875rem, 4.5vw, 3.5rem);
+            padding: 0;
+            padding-left: calc(24 / 16 * 1rem);
+            color: var(--headerColor);
+            border-radius: calc(8 / 16 * 1rem);
+            border: 1px solid #dad9e3;
+            /* prevents padding from adding to height and width */
+            box-sizing: border-box;
+            &::placeholder {
+                color: #7d799c;
+                opacity: 0.6;
+            }
+        }
+
+        .cs-textarea {
+            min-height: calc(120 / 16 * 1rem);
+            padding-top: calc(24 / 16 * 1rem);
+            margin-bottom: calc(16 / 16 * 1rem);
+            font-family: inherit;
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875em, 5.5vw, 3.5em);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #1a1a1a;
+            border: none;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            transition: color 0.3s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
                 transition: width 0.3s;
             }
 
             &:hover {
+                color: #fff;
                 &:before {
                     width: 100%;
                 }
             }
+        }
 
-            &:last-of-type {
-                margin-bottom: 0;
+        .cs-submit {
+            width: 100%;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            border-radius: calc(8 / 16 * 1rem);
+            grid-column: span 12;
+            &:hover {
+                cursor: pointer;
             }
         }
 
-        .cs-block {
-            /* sends second address line to the bottom on its own line */
-            display: block;
+        .cs-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
 
-        .cs-bg-picture {
+        .cs-card-group {
+            width: 100%;
+            max-width: calc(522 / 16 * 1rem);
+            margin: 0;
+            padding: var(--sectionPadding);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 16px - 20px */
+            gap: clamp(1rem, 2.3vw, 1.25rem);
+            order: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-item {
+            text-align: left;
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            /* 16px - 20px */
+            padding: clamp(1rem, 4vw, 2.5rem);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+
+            &:hover {
+                &:before {
+                    opacity: 1;
+                }
+
+                .cs-header,
+                .cs-item-text,
+                .cs-link {
+                    color: var(--bodyTextColorWhite);
+                }
+
+                .cs-text,
+                .cs-link {
+                    opacity: 0.8;
+                }
+
+                .cs-link {
+                    &:hover {
+                        color: var(--primary);
+                    }
+                }
+
+                .cs-icon {
+                    filter: grayscale(1) brightness(1000%);
+                }
+            }
+
+            &:before {
+                /* hover border and background */
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: #1a1a1a;
+                border: 1px solid var(--primary);
+                opacity: 0;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: opacity 0.3s;
+            }
+        }
+
+        .cs-header {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: 1.2em;
+            text-align: inherit;
+            font-weight: 700;
+            /* 12px - 16px */
+            margin: 0 0 clamp(0.75rem, 1.6vw, 1rem);
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-align: inherit;
+            margin: 0 0 calc(4 / 16 * 1rem);
+            color: var(--bodyTextColor);
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .cs-link {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: calc(4 / 16 * 1rem);
+            transition: color 0.3s;
+        }
+
+        .cs-icon {
+            width: calc(16 / 16 * 1rem);
+            height: auto;
+        }
+
+        .cs-background {
             width: 100%;
             height: 100%;
+            background-color: #1a1a1a;
             display: block;
             position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
-            transition: transform 0.6s;
-
-            &:before {
-                /* background color overlay */
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 0.8) 100%
-                );
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
 
             img {
                 width: 100%;
                 height: 100%;
-                /* Makes img tag act as a background image */
                 object-fit: cover;
                 position: absolute;
                 top: 0;
@@ -208,118 +344,69 @@
     }
 }
 
-/* Tablet - 700px */
-@media only screen and (min-width: 43.75em) {
-    #cs-contact {
-        #cs-form {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-
-            label {
-                width: 48%;
-            }
-
-            .cs-label-message {
-                width: 100%;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #contact-1269 {
+        .cs-label {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                grid-column: span 6;
             }
         }
     }
 }
 
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64em) {
-    #cs-contact {
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #contact-1269 {
+        /* moved padding back to the section container */
+        padding: var(--sectionPadding);
+
         .cs-container {
-            max-width: calc(1280 / 16 * 1rem);
-            display: flex;
-            justify-content: flex-end;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            text-align: left;
+            margin: 0;
+            padding: 0;
             align-items: flex-start;
-            gap: calc(80 / 16 * 1rem);
         }
 
-        #cs-form {
-            max-width: calc(630 / 16 * 1rem);
-            label {
-                width: 100%;
-            }
+        .cs-form-group {
+            width: 43%;
+            max-width: calc(522 / 16 * 1rem);
+            margin: 0;
+            padding: 0;
         }
 
-        .cs-right-section {
-            width: 40%;
-            max-width: calc(542 / 16 * 1rem);
-            /* changes to 578px at 1300px wide */
-            height: calc(686 / 16 * 1rem);
-            /* prevents flexbox from squishing it */
+        .cs-form {
+            padding: 0;
+        }
+
+        .cs-wrapper {
+            width: 50%;
+            max-width: calc(524 / 16 * 1rem);
             flex: none;
-
-            &:hover {
-                .cs-bg-picture {
-                    transform: scale(1.1);
-                }
-            }
+            /* sends it to the right in the 2nd position */
+            order: 2;
+            /* removes position from it so the absolutely positioned background group can now be positioned relative to the section container */
+            position: initial;
         }
 
-        .cs-block {
-            /* goes back to inline so it stays "in line" with the rest of the text */
-            display: inline-block;
-        }
-    }
-}
-
-/* Small Desktop - 1300px */
-@media only screen and (min-width: 81.25em) {
-    #cs-contact {
-        #cs-form {
-            column-gap: calc(0 / 16 * 1rem);
-            label {
-                width: 48%;
-                max-width: calc(305 / 16 * 1rem);
-            }
-
-            .cs-label-message {
-                max-width: 100%;
-            }
+        .cs-background {
+            width: 60vw;
+            height: 100%;
+            left: 50%;
+            top: 0;
         }
 
-        .cs-right-section {
-            height: calc(578 / 16 * 1rem);
+        .cs-card-group {
+            padding: 0;
         }
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #cs-contact {
-            .cs-text,
-            .cs-title {
-                color: var(--bodyTextColorWhite);
-            }
-
-            #cs-form {
-                label,
-                input,
-                textarea {
-                    color: var(--bodyTextColorWhite);
-                    background-color: transparent;
-
-                    &::placeholder {
-                        /* lighten up the color of the text by 40%*/
-                        filter: brightness(1.4);
-                    }
-                }
-            }
-
-            .cs-bg-picture {
-                background-color: #000;
-
-                img {
-                    /* lets parent background-color bleed through and darken it */
-                    opacity: 0.5;
-                }
-            }
-        }
-    }
-}
+                                

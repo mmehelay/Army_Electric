@@ -1,0 +1,109 @@
+---
+title: 'Solar'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'Solar/'
+eleventyNavigation:
+    key: Solar
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Solar</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Hero2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Hero2.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/Hero2.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-418">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">Solar</h2>
+            <p class="cs-text">
+             At Army Electric, we harness more than sunlight; we ignite sustainable futures. Our proficient team specializes in integrating solar energy solutions into Toronto's landscapes, empowering homes and businesses to tap into clean, renewable power. With us, your property isn't just solar-equipped—it's transformed into a beacon of environmental stewardship, where every panel and inverter propels you towards energy independence and a greener tomorrow.
+            </p>
+            <div class="cs-button-group">
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+              
+            </div>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/army1.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/army1.png">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/army1.png" alt="yard" width="558" height="496">
+          
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Expertise</span>
+            <h2 class="cs-title">Why Choose Us?</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild.svg" alt="heart icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Renewable Energy Experts</h3>
+                <p class="cs-item-text">
+             We're at the forefront of solar technology, providing you with cutting-edge solutions that maximize efficiency and sustainability.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/toolbox.svg" alt="toolbox icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Tailored Solar Designs</h3>
+                <p class="cs-item-text">
+                 Every solar installation is customized to fit your property's unique needs and aesthetic, ensuring optimal performance and curb appeal.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Commitment to Sustainability</h3>
+                <p class="cs-item-text">
+                Our dedication to green energy goes beyond installations; we're your partners in contributing to a healthier planet for future generations.
+                </p>
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Ask Us Anything</a>
+    </div>
+</section>
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}

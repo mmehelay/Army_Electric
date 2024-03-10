@@ -1,0 +1,109 @@
+---
+title: 'Commercial'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'Commercial/'
+eleventyNavigation:
+    key: Commercial
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/service.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Commercial</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/Hero2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/Hero2.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/Hero2.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-418">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">Commercial</h2>
+            <p class="cs-text">
+              At Army Electric, we're not just about wires and circuits; we're about energizing your business's potential. Our team of expert electricians is dedicated to transforming Toronto's commercial spaces into vibrant hubs of productivity and innovation. With cutting-edge solutions and a keen eye for detail, we ensure that your electrical infrastructure isn't just functional—it's a stepping stone to your business's success.
+            </p>
+            <div class="cs-button-group">
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+              
+            </div>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/commercial2.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/commercial2.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/commercial2.jpg" alt="yard" width="558" height="496">
+          
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Expertise</span>
+            <h2 class="cs-title">Why Choose Us?</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild.svg" alt="heart icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Customized for Your</h3>
+                <p class="cs-item-text">
+               We tailor every solution to fit your commercial vision, turning your space into a powerhouse of productivity and innovation.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/toolbox.svg" alt="toolbox icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Excellence in Every Detail</h3>
+                <p class="cs-item-text">
+                   Expect nothing less than perfection. We bring a blend of top-quality materials, ensuring your electrical systems are not just compliant, but a cut above the rest.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Always at Your Service</h3>
+                <p class="cs-item-text">
+                 Count on us for prompt, reliable support that keeps your operations smooth, your downtime minimal, and your peace of mind intact.
+                </p>
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Ask Us Anything</a>
+    </div>
+</section>
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}
