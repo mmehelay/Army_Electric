@@ -1,0 +1,380 @@
+---
+title: 'Commercial Electrical Services'
+description: 'Discover top-tier commercial electrical expertise with Army Electric in Toronto. Specializing in custom designs, installations, and maintenance for businesses, we also offer residential, industrial, and innovative solar solutions. Powering your projects with excellence and innovation'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-997">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Army Electric</span>
+            <h1 class="cs-title"><span class="cs-color">Powering </span>Toronto</h1>
+            <p class="cs-text">
+                From Office Buildings to Retail Spaces, Army Electric Lights the Way. We also serve Residential and Industrial sectors
+            </p>
+            <div class="cs-button-box">
+                <a href="/contact" class="cs-button-solid">Get In Touch</a>
+                <a href="/about" class="cs-button-transparent">About Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hero1.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero1.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/hero1.jpg" alt="restaurant" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Experienced</span>
+            <h2 class="cs-title">Our Commercial Expertise</h2>
+            <p class="cs-text">
+               From custom installations to ongoing maintenance, we power your commercial spaces with the best work out there! Our seasoned team brings decades of combined experience to every project. Whether it's retrofitting an older building with energy-efficient lighting or integrating smart technology for a new development, we're here to make your commercial vision a reality. 
+            </p>
+        </div>
+        <a href="#contact-1525" class="cs-button-solid">Project Inquiries</a>
+
+</section>
+                                
+
+
+
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-342">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">More Than Just Commercial</h2>
+        </div>
+        <ul class="cs-card-group">
+
+                <li class="cs-item">
+                <a href="/commercial" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/commercial1.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/commercial1.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/commercial1.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Commercial</h3>
+                    <p class="cs-item-text">
+       We stand with Toronto's commercial heart, offering warm, personalized electrical care designed for every unique business space. It's all about safety, efficiency, and fresh ideas.
+                    </p>
+                </a>
+            </li>
+                <li class="cs-item">
+                <a href="/industrial" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/commercial2.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/commercial2.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/commercial2.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Industrial</h3>
+                    <p class="cs-item-text">
+                       Supporting the backbone of Toronto's industry with robust electrical services, we cater to large-scale operations, focusing on enhancing safety, and efficiency.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/residential" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/residential3.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/residential3.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/residential3.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Residential</h3>
+                    <p class="cs-item-text">
+                      Transform your home with our electrical services, from minor repairs to full-scale renovations, all meant to ensure your living space is safe, functional, and beautifully lit. Where every device adds to your quality of life
+                    </p>
+                </a>
+            </li>
+
+            <li class="cs-item">
+                <a href="/control4" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Control4.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Control4.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/Control4.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Control 4 Dealer</h3>
+                    <p class="cs-item-text">
+                       We're not just wiring homes; we're crafting interconnected smart living environments. Our expertise extends to seamlessly integrating smart devices, ensuring they work in harmony to create an intelligent home ecosystem
+                       </p>
+                </a>
+            </li>
+               <li class="cs-item">
+                <a href="/solar" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/solar4.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/solar4.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/solar4.jpg" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Solar</h3>
+                    <p class="cs-item-text">
+                      From solar panel installations and energy storage systems to solar maintenance and repairs, we help you reduce your carbon footprint and save on energy costs.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-1738">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">5000+</span>
+                <p class="cs-item-text">
+                     Commercial Projects Completed
+                </p>
+              
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">100%</span>
+                <p class="cs-item-text">
+                    Customer Satisfaction Rate
+                </p>
+            
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">20+</span>
+                <p class="cs-item-text">
+                    Years of Experience
+                </p>
+       
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+{# <!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-284">
+    <div class="cs-container">
+        <!-- Left Section -->
+        <div class="cs-content">
+            <span class="cs-topper">Steps</span>
+            <h2 class="cs-title">Our Process from Start to Finish</h2>
+            <p class="cs-text">
+               At Army Electric, we believe in transparency and efficiency. That's why we've developed a streamlined process to ensure your project is completed smoothly and to your satisfaction:
+            </p>
+            <a href="" class="cs-button-solid">Read More</a>
+        </div>
+        <!-- Right Section -->
+        <ul class="cs-right-section">
+            <li class="cs-item">
+                <span class="cs-number">01</span>
+                <p class="cs-item-text">
+                    <strong>Initial Consultation</strong> We begin by sitting down with you to understand your needs, preferences, and budget.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">02</span>
+                <p class="cs-item-text">
+                    <strong>Detailed Planning</strong> Once we have a clear understanding of your project goals, our team develops a detailed plan outlining the scope of work, timeline, and materials required.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">03</span>
+                <p class="cs-item-text">
+                    <strong>Expert Execution</strong> With the plan in place, our experienced technicians and electricians get to work. 
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">04</span>
+                <p class="cs-item-text">
+                    <strong>Final Inspection</strong> After completing the project, we conduct a thorough inspection to ensure everything is functioning correctly and meets your satisfaction.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section> #}
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Take a glimpse at some of our completed projects</span>
+            <h2 class="cs-title">Our Gallery</h2>
+       
+        </div>
+        <ul class="cs-image-group">
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/commercial1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/commercial1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/commercial1.jpg" alt="fancy house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/solar2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/solar2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/solar2.jpg" alt="modern house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 3 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/solar4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/solar4.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/solar4.jpg" alt="modern home at night" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 4 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/commercial5.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/commercial5.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/commercial5.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 5 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/commercial4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/commercial4.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/commercial4.jpg" alt="appliance" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 6 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/commercial6.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/commercial6.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/commercial6.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 7 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/residential1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/residential1.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/residential1.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 8 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/residential2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/residential2.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/residential2.jpg" alt="modern home" width="346" height="346">
+                </picture>
+            </li>
+        </ul>
+        <a href="https://www.instagram.com/armyelectric/" class="cs-button-solid">View Full Gallery</a>
+    </div>
+</section>
+                                
+ <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1452">
+    <div class="cs-container">
+        <div class="cs-content">
+            <!--Yellow Quote-->
+            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/quote-yellow.svg" decoding="async" alt="quote icon" width="40" height="33" loading="lazy">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Exceeding Expectations in Every Way</h2>
+            <p class="cs-text">
+                At Army Electric, customer satisfaction is our top priority. We're proud to have served numerous clients in Toronto and beyond, providing them with reliable electrical solutions tailored to their needs. But don't just take our word for it – here's what some of our satisfied customers have to say about their experience with us
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <p class="cs-review">
+                    We have worked with Michael and his team for years on several projects. Highly recommend Army Electric! Professional, knowledgeable, courteous & a pleasure to work with!
+                </p>
+                <div class="cs-flex-group">
+             
+                    <span class="cs-name">
+                        Gloria
+                        
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <p class="cs-review">
+                    They have done numerous jobs for me over the years. As always, the work is of excellent quality, very professional, and they show up when they say they will. I have and will continue to use Army Electric
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-name">
+                        Sam
+                      
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                                               
+                                                   
+
+                                
+                                               
+                                
+                                                           
+    
+
+    {% include 'components/cta.html' %}
+{% endblock %}
